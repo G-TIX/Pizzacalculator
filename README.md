@@ -1,1 +1,2 @@
-Pizzacalculator
+# Pizzacalculator
+week 1
