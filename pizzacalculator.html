@@ -2,9 +2,9 @@
 <html>
 <script>
 // defines price
-const smallPrice = 8;
-const mediumPrice = 10;
-const largePrice = 12;
+const smallPrice = 799;
+const mediumPrice = 999;
+const largePrice = 1199;
 // asks the customer how manny pizza's they want through prompts.
 var smallAmount = prompt('how many small pizzas (\u20AC 8) would you like?');
 var mediumAmount = prompt('how many medium pizzas (\u20AC 10) would you like?');
@@ -14,15 +14,15 @@ var smallTotal = smallPrice * smallAmount;
 var mediumTotal = mediumPrice * mediumAmount;
 var largeTotal = largePrice * largeAmount;
 // calculates all prices together for a total price for all pizzas ordered.
-var subTotal = smallTotal + mediumTotal + largeTotal;
+var subTotal = (smallTotal + mediumTotal + largeTotal) /100;
 
 
 //displays how many pizzas the customer ordered and includes the total price.
-document.write('small pizzas ordered: ' + smallAmount + '<br>' + 'price: &euro;'  + smallTotal);
+document.write('small pizzas ordered: ' + smallAmount + '<br>' + 'price: &euro;'  + smallTotal /100);
 document.write('<br><br>');
-document.write('medium pizzas ordered: ' + mediumAmount + '<br>' + 'price: &euro;' + mediumTotal);
+document.write('medium pizzas ordered: ' + mediumAmount + '<br>' + 'price: &euro;' + mediumTotal /100);
 document.write('<br><br>');
-document.write('large pizzas ordered: ' + largeAmount +'<br>' + 'Price: &euro;' + largeTotal);
+document.write('large pizzas ordered: ' + largeAmount +'<br>' + 'Price: &euro;' + largeTotal /100);
 document.write('<br><br>');
 document.write('subtotal: &euro;' + subTotal);
 </script>
